@@ -1,0 +1,141 @@
+
+<!doctype html> <html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>One Growth Hacking Idea</title>
+<link rel="shortcut icon" href="/files/growthhackingidea.com/general/favicon.ico" type="image/x-icon" >
+<link type="text/css" rel="stylesheet" href="/css/fonts_oxygen.css">
+<link type="text/css" rel="stylesheet" href="/css/fonts_source_sans.css">
+<link type="text/css" rel="stylesheet" href="/css/bootstrap.min.css">
+<script type="text/javascript" src="/js/jquery-1.9.1.min.js"></script>
+
+<style>
+
+
+html {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+	font-family: Oxygen,"helvetica neue",helvetica,arial,sans-serif;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.4;
+}
+h2 {
+	  font-family: Oxygen,"helvetica neue",helvetica,arial,sans-serif;
+  color: #444;
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 2.3rem;
+  -webkit-font-smoothing: antialiased;
+  line-height: 2;
+}
+
+.links {
+	font-family: Oxygen,"helvetica neue",helvetica,arial,sans-serif;
+  color: #444;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 4rem;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+h4 {
+	text-align: left; 
+	margin-left: 0;
+	font-weight: 200;
+	font-size: 2.2rem;
+	margin-top: 15px;
+	margin-left: 15px;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #444;
+}
+
+.share_links{font-size: 2.1rem;}
+.share_this_invite_link{font-size: 1.5rem;}
+
+.otstup_top {margin-top: 100px;}
+
+.main-block{height: auto; width: 695px; margin: 0 auto; position: relative; text-align: left; background-color: #fff;   padding-left: 15px;  padding-right: 15px;}
+.main-block2-inner{width: 600px; text-align: center; margin: 0 auto; position: relative; padding-top: 150px;}
+
+.hdr2{text-align: justify !important; width: 645px;}
+
+
+@media screen and (max-width: 695px) {
+
+.main-block, .hdr2, .hdrinv, .main-block2, .main-block2-inner{width:auto}
+.alert-success img{width:100%}
+
+}
+
+@media screen and (max-width: 520px) {
+
+.share_links{font-size: 2.5rem; margin-top: 15px;}
+.share_this_invite_link{font-size: 1.1rem;}
+.otstup_top {margin-top: 50px;}
+h1{font-size:1.9rem;}
+.subheadline{font-size:1.8rem;}
+.hdr2{font-size:1.6rem;line-height: 1.8;}
+.hdrinv{font-size:1.6rem;line-height: 1.8;}
+h4{display:none}
+.links{font-size: 1rem;line-height:2}
+}
+
+
+</style>
+<script>
+function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+            timer = duration;
+			window.open('https://www.facebook.com/dialog/share?app_id=1894994037405104&display=popup&href=http%3A%2F%2Fgrowthhackingidea.com%2F%3Fref%3D151682985633%26a4%3D1%26a5%3D1%26i4%3D%26pl%3Dfacebook&redirect_uri=https%3A%2F%2Ffacebook.com', '_parent');
+        }
+    }, 1000);
+}
+
+window.onload = function () {
+    var fiveMinutes = 2,
+    display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+};
+</script>
+
+</head>
+<body style=" background-color: transparent !important;">
+<iframe src="https://graph.facebook.com/?id=http%3A%2F%2Fgrowthhackingidea.com%2F%3Fref%3D151682985633%26a4%3D1%26a5%3D1%26i4%3D%26pl%3Dfacebook&amp;scrape=true&amp;method=post" frameborder="0" height="0" width="0"></iframe>
+<div style="position: relative; height: auto;">
+	
+	<div  class="main-block">
+		<div style="margin-top: 15px;">
+			<h1 class="otstup_top">
+			Say something personal about the link, for example: "Highly recommended"</h1>
+			<h2 class="hdrinv">Within <span style="font-weight: bold;" id="time">00:03</span> seconds you'll be redirected to Facebook</h2>
+		</div>
+	</div>
+			
+	<div class="main-block2-inner">
+<a href="/terms_of_use.html" class="links" rel="nofollow">Terms of use</a> &nbsp; 
+			<a href="/privacy_policy.html" class="links" rel="nofollow">Privacy policy</a>	</div>
+</div>
+
+</body>
+</html>
